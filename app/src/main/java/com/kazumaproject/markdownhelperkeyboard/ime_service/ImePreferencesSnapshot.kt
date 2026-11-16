@@ -444,7 +444,7 @@ data class ImePreferencesSnapshot(
                     showEmoticonCandidates =
                         appPreference.emoticon_candidate_enable_preference,
                 ),
-                flickSensitivityPreferenceValue = appPreference.flick_sensitivity_preference ?: 100,
+                flickSensitivityPreferenceValue = appPreference.flick_sensitivity_preference ?: 60,
                 flickThresholdShapePreferenceValue =
                     appPreference.flick_threshold_shape_preference,
                 tfbiDiagonalRecognitionModePreferenceValue =

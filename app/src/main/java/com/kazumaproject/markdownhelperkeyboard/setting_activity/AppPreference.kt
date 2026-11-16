@@ -222,7 +222,7 @@ object AppPreference {
 
     private val CLIPBOARD_HISTORY_ENABLE = Pair("clipboard_history_preference", false)
     private val TIME_SAME_PRONOUNCE_TYPING = Pair("time_same_pronounce_typing_preference", 1000)
-    private val FLICK_SENSITIVITY = Pair(FLICK_SENSITIVITY_KEY, 100)
+    private val FLICK_SENSITIVITY = Pair(FLICK_SENSITIVITY_KEY, 60)
     private val FLICK_THRESHOLD_SHAPE = Pair(
         FLICK_THRESHOLD_SHAPE_KEY,
         FlickThresholdShape.Radial.preferenceValue
@@ -1961,7 +1961,7 @@ object AppPreference {
             FLICK_SENSITIVITY.first, FLICK_SENSITIVITY.second
         )
         set(value) = preferences.edit {
-            it.putInt(FLICK_SENSITIVITY.first, value ?: 100)
+            it.putInt(FLICK_SENSITIVITY.first, value ?: 60)
         }
 
     var flick_threshold_shape_preference: String

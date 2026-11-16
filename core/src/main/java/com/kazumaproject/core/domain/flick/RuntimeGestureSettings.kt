@@ -29,7 +29,7 @@ data class RuntimeGestureSettings(
     companion object {
         const val MIN_FLICK_SENSITIVITY = 1
         const val MAX_FLICK_SENSITIVITY = 200
-        const val DEFAULT_FLICK_SENSITIVITY = 100
+        const val DEFAULT_FLICK_SENSITIVITY = 60
 
         const val MIN_LONG_PRESS_TIMEOUT_MILLIS = 100L
         const val MAX_LONG_PRESS_TIMEOUT_MILLIS = 2_000L

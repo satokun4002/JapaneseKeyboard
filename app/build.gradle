@@ -63,7 +63,7 @@ android {
     productFlavors {
         full {
             dimension "edition"
-            versionNameSuffix "-sat.2"
+            versionNameSuffix "-sat.3"
             buildConfigField "boolean", "HAS_ZENZ", "true"
             buildConfigField "boolean", "HAS_GEMMA", "true"
             buildConfigField "String", "APP_EDITION", "\"full\""

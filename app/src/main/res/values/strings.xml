@@ -271,6 +271,10 @@
     <string name="omission_search_summary_on">Omit modifier key input is enabled\ne.g., "かつこう" → "がっこう"</string>
     <string name="omission_search_summary_off">Omit modifier key input is disabled</string>
     <string name="flick_sensitivity_title">Flick Input Sensitivity</string>
+    <string name="flick_preset_title">Flick Sensitivity Preset</string>
+    <string name="flick_preset_snappy">Snappy (short flicks)</string>
+    <string name="flick_preset_balanced">Balanced</string>
+    <string name="flick_preset_steady">Steady (fewer mistaps)</string>
     <string name="flick_threshold_shape_title">Flick Start Detection Area</string>
     <string name="flick_threshold_shape_radial">Uniform in every direction (circular, recommended)</string>
     <string name="flick_threshold_shape_rectangular">Horizontal and vertical threshold (rectangular)</string>

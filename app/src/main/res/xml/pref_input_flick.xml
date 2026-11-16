@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <PreferenceCategory android:title="@string/settings_input_scope">
+        <ListPreference android:key="flick_preset_preference" android:title="@string/flick_preset_title"
+            android:defaultValue="balanced" android:entries="@array/flick_preset_entries"
+            android:entryValues="@array/flick_preset_values" app:useSimpleSummaryProvider="true" />
         <SeekBarPreference android:key="flick_sensitivity_preference" android:title="@string/flick_sensitivity_title"
-            android:defaultValue="100" app:min="1" android:max="200" app:seekBarIncrement="5" app:showSeekBarValue="true" />
+            android:defaultValue="60" app:min="1" android:max="200" app:seekBarIncrement="5" app:showSeekBarValue="true" />
         <SeekBarPreference android:key="long_press_timeout_preference" android:title="@string/long_press_timeout_preference_title"
             android:defaultValue="300" app:min="100" android:max="2000" app:seekBarIncrement="25" app:showSeekBarValue="true" />
         <SwitchPreferenceCompat android:key="flick_input_only_preference" android:title="@string/flick_input_only_title"

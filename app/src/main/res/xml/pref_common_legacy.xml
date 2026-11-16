@@ -129,7 +129,7 @@
             app:showSeekBarValue="true" />
 
         <SeekBarPreference
-            android:defaultValue="100"
+            android:defaultValue="60"
             android:key="flick_sensitivity_preference"
             android:max="200"
             android:title="@string/flick_sensitivity_title"

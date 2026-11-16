@@ -557,6 +557,7 @@ object SettingDestinations {
         "flick_input_only_preference",
         "flick_editor_preview_preference",
         "flick_editor_preview_delay_ms",
+        "flick_preset_preference",
         "flick_sensitivity_preference",
         "flick_threshold_shape_preference",
         "long_press_timeout_preference",

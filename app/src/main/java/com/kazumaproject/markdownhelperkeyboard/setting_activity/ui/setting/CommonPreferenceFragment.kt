@@ -945,6 +945,37 @@ open class CommonPreferenceFragment : AsyncPreferenceFragment() {
             }
         }
 
+        findPreference<ListPreference>("flick_preset_preference")?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                // GearBoard (Phase 1): one-tap presets that set sensitivity + threshold
+                // shape together. Values follow the bands used by the sensitivity
+                // summary above (0..50 very sensitive, 91..110 normal, 111..150 less).
+                val preset = when (newValue as? String) {
+                    "snappy" -> 40 to "rectangular"
+                    "balanced" -> 70 to "radial"
+                    "steady" -> 120 to "radial"
+                    else -> null
+                }
+                if (preset != null) {
+                    val (sensitivity, shape) = preset
+                    findPreference<SeekBarPreference>("flick_sensitivity_preference")?.let { sbp ->
+                        sbp.value = sensitivity
+                        sbp.summary = when (sensitivity) {
+                            in 0..50 -> getString(R.string.sensitivity_very_high)
+                            in 51..90 -> getString(R.string.sensitivity_high)
+                            in 91..110 -> getString(R.string.sensitivity_normal)
+                            in 111..150 -> getString(R.string.sensitivity_less)
+                            in 151..200 -> getString(R.string.sensitivity_low)
+                            else -> ""
+                        }
+                    }
+                    findPreference<ListPreference>("flick_threshold_shape_preference")?.value =
+                        shape
+                }
+                true
+            }
+        }
+
         findPreference<SeekBarPreference>("key_sound_volume_percent_preference")?.apply {
             updateKeySoundVolumeSummary(value)
             setOnPreferenceChangeListener { _, newValue ->
