@@ -476,7 +476,8 @@ object AppPreference {
     private val CANDIDATE_VIEW_EMPTY_HEIGHT_DP_LANDSCAPE =
         Pair("candidate_view_empty_height_dp_landscape_preference", 60)
 
-    private val FLICK_INPUT_ONLY = Pair("flick_input_only_preference", false)
+    // Personal fork (Phase 1): flick-only input is the default (spec v1.0 §1-1).
+    private val FLICK_INPUT_ONLY = Pair("flick_input_only_preference", true)
     private val FLICK_EDITOR_PREVIEW = Pair(FLICK_EDITOR_PREVIEW_KEY, false)
     private val OMISSION_SEARCH = Pair("omission_search_preference", false)
     private val UNDO_ENABLE = Pair("undo_enable_preference", false)

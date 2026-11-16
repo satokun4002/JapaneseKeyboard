@@ -43,7 +43,9 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.kazumaproject.markdownhelperkeyboard"
+        // Personal fork (Phase 0.5): own applicationId so this build can coexist
+        // with the upstream Sumire app. Code package/namespace stay unchanged.
+        applicationId "com.satgear.sumire"
         minSdk 24
         targetSdk 37
         versionCode 873
@@ -61,6 +63,7 @@ android {
     productFlavors {
         full {
             dimension "edition"
+            versionNameSuffix "-sat.1"
             buildConfigField "boolean", "HAS_ZENZ", "true"
             buildConfigField "boolean", "HAS_GEMMA", "true"
             buildConfigField "String", "APP_EDITION", "\"full\""

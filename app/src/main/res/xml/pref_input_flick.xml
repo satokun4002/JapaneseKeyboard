@@ -6,7 +6,7 @@
         <SeekBarPreference android:key="long_press_timeout_preference" android:title="@string/long_press_timeout_preference_title"
             android:defaultValue="300" app:min="100" android:max="2000" app:seekBarIncrement="25" app:showSeekBarValue="true" />
         <SwitchPreferenceCompat android:key="flick_input_only_preference" android:title="@string/flick_input_only_title"
-            android:defaultValue="false" android:summaryOn="@string/flick_input_only_summary_on" android:summaryOff="@string/flick_input_only_summary_off" />
+            android:defaultValue="true" android:summaryOn="@string/flick_input_only_summary_on" android:summaryOff="@string/flick_input_only_summary_off" />
         <ListPreference android:key="flick_threshold_shape_preference" android:title="@string/flick_threshold_shape_title"
             android:defaultValue="radial" android:entries="@array/flick_threshold_shape_entries"
             android:entryValues="@array/flick_threshold_shape_values" app:useSimpleSummaryProvider="true" />

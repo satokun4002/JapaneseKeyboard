@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Personal fork (Phase 0.5): own app name, overrides core app_name for the full edition. -->
+    <string name="app_name">SAT キーボード</string>
+</resources>

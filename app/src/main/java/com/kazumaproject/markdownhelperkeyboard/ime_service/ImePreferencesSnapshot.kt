@@ -368,7 +368,7 @@ data class ImePreferencesSnapshot(
                 enabledDictionaryCategories = ClassifiedDictionaries.categories.filterTo(linkedSetOf()) {
                     optionalEnabled(it, true)
                 },
-                isFlickOnlyMode = appPreference.flick_input_only_preference ?: false,
+                isFlickOnlyMode = appPreference.flick_input_only_preference ?: true,
                 flickEditorPreviewPreference = appPreference.flick_editor_preview_preference,
                 flickEditorPreviewDelayMillis = appPreference.flick_editor_preview_delay_ms,
                 isOmissionSearchEnable = appPreference.omission_search_preference ?: false,
